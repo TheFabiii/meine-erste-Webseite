@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="de">
+ <head>
+    <title>Freundestabelle</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="freundestabelle.css">
+ </head>
+<body>
+    <h1>Meine Freunde</h1>
+    <form>
+<p>
+    <label>
+        <span class="unterschrift">Vorname:</span>
+        <input placeholder="Vorname des Freundes" type="text" name="firstName" > <!--placeholder= Platzhalter-->
+    </label>
+</p>
+<p>
+    <label>
+        <span class="unterschrift">Nachname:</span>
+        <input type="text" name="lastName" placeholder="Nachname des Freundes" >
+    </label>
+</p>
+<p> 
+    <label>
+        <span class="unterschrift">Geschlecht:</span>
+        <span class="radio"><input type="radio" name="gender" checked value="männlich"></span>männlich
+    </label>
+    <label>
+        <span class="radio"><input type="radio" name="gender" value="weiblich"></span>weiblich
+    </label>
+    <label>
+        <span class="radio"><input type="radio" name="gender" value="divers"></span>divers
+    </label>
+</p>
+<p>
+    <label>
+        <span class="unterschrift">Geburtstag:</span>
+        <input type="date" name="birthday">
+    </label>
+</p>
+<p>
+    <label>
+        <span class="unterschrift">Hobbies:</span>
+        <span class="checkbox"><input type="checkbox" name="hobbies" value="Fußball"></span>Fußball
+    </label>
+    <label>
+        <span class="checkbox"><input type="checkbox" name="hobbies" value="Hockey"></span>Hockey
+    </label>
+    <label>
+        <span class="checkbox"><input type="checkbox" name="hobbies" value="Basketball"></span>Basketball
+    </label>
+    <label>
+        <span class="checkbox"><input type="checkbox" name="hobbies" value="Tennis"></span>Tennis
+    </label>
+    <label>
+        <input type="checkbox" name="hobbies" value="Kochen">Kochen
+    </label>
+    <label>
+       <input type="checkbox" name="hobbies" value="Tanzen">Tanzen
+    </label>
+    <label>
+        <span class="checkbox"><input type="checkbox" name="hobbies" value="Anderes"></span>Anderes
+    </label>
+</p>
+<p>
+    <label>
+        <span class="unterschrift">Lieblingsfach:</span>
+        <select name="favoriteSchoolSubject">
+            <option>--Bitte auswählen--</option>
+            <option>Mathe</option>
+            <option>Deutsch</option>
+            <option>SWP</option>
+            <option>Betriebstechnik</option>
+            <option>MT</option>
+            <option>Informatik</option>
+            <option>Bewegung und Sport</option>
+            <option>Kochen</option>
+            <option>Tanzen</option>
+        </select>
+    </label>
+</p>
+<p>
+    <label>
+        <span class="unterschrift">Lieblingsfarbe:</span>
+        <input type="color" name="favoriteColor">
+    </label>
+</p>
+
+<p>
+    <label>
+        <span class="unterschrift" style="vertical-align: top;">Bemerkungen:</span>
+        <textarea name="info" placeholder="Zusatzinformationen des Freundes" cols="50" rows="3"></textarea> <!--cols= Spalten horizontal; rows= Reihen vertikal -->
+    </label>
+</p>
+<p>
+    <label>
+        <input type="submit" value="Freund hinzufügen">
+    </label>
+</p>
+
+</form>
+<table>
+                <thead><!--Kopfzeilenbereich-->
+            <tr><!--Tabellenzeile-->
+                <th>Vorname</th><!--Überschriftenspalte-->
+                <th>Nachname</th>
+                <th>Spitzname</th>
+                <th>Geburtsdatum</th>
+                <th colspan="3">Hobby</th>
+                <th>Lieblingsfach</th>
+            </tr>
+        </thead>
+            <tbody><!--Tabellendatenbereich-->
+                <tr>
+                    <td>Marko</td><!--Datenspalte-->
+                    <td>Kresic</td>
+                    <td>Marko</td>
+                    <td>23.07.2006</td>
+                    <td>Fischen</td>
+                    <td>Fußball</td>
+                    <td>Radfahren</td>
+                    <td rowspan="10">SWP</td>
+                    <!-- <td>SWP</td> -->
+                </tr>
+                <tr>
+                    <td>David</td><!--Datenspalte-->
+                    <td>Lametschwandtner</td>
+                    <td>Dominik Hametschawndter</td>
+                    <td>16.11.2005</td>
+                    <td>Fußball</td>                
+                    <td>Fifa spielen</td>
+                    <td></td>
+                    <!-- <td>SWP</td> -->
+                </tr>
+                    <tr>
+                <td>Julian</td><!--Datenspalte-->
+                    <td>Putz</td>
+                    <td>Juli</td>
+                    <td>27.01.2005</td>
+                    <td>Fußball</td>
+                    <td>Tennis</td>
+                    <td>Laufen</td>
+                    <!--<td>SWP></td>-->
+                    </tr>
+                <tr>
+                    <td>Fabian</td><!--Datenspalte-->
+                    <td>Fellinger</td>
+                    <td>Fabi</td>
+                    <td>02.11.2004</td>
+                    <td>Fußball</td>
+                    <td>Laufen</td>
+                    <td>Fifi-spielen</td>
+                    <!-- <td>SWP</td> --><!--Auskommentieren (STRG #-->
+                </tr>
+                <tr>
+                    <td>Simon</td><!--Datenspalte-->
+                    <td>Hufnagl</td>
+                    <td>Buffetmann</td>
+                    <td>17.03.2006</td>
+                    <td>Tischtennis</td>
+                    <td>Tennisschauen</td>
+                    <td>Radfahren</td>
+                    <!-- <td>SWP</td> -->
+                </tr>
+                <tr>
+                    <td>Johannes</td><!--Datenspalte-->
+                    <td>Pohn</td>
+                    <td>Josi</td>
+                    <td>28.07.2006</td>
+                    <td>Turnen</td>
+                    <td>Artistik</td>
+                    <td>Trampolin</td>
+                    <!-- <td>SWP</td> -->
+                </tr>
+                
+                <tr>
+                    <td>Clemens</td><!--Datenspalte-->
+                    <td>Berer</td>
+                    <td>Clemi</td>
+                    <td>11.07.2006</td>
+                    <td>Karate</td>
+                    <td>Fußball</td>
+                    <td></td>
+                    <!-- <td>SWP</td> -->
+                </tr>
+                <tr>
+                    <td>David</td><!--Datenspalte-->
+                    <td>Schinagl</td>
+                    <td>Dadl</td>
+                    <td>27.07.2006</td>
+                    <td>Motor-Cross</td>
+                    <td>Tischtennis</td>
+                    <td></td>
+                    <!-- <td>SWP</td> -->
+                </tr>
+                <tr>
+                    <td>Simon</td><!--Datenspalte-->
+                    <td>Serbinek</td>
+                    <td>Herr Serbinek</td>
+                    <td>18.04.2003</td>
+                    <td>Tennis</td>
+                    <td>Fußballschauen</td>
+                    <td>Fußball</td>
+                    <!-- <td>SWP</td> -->
+                </tr>
+                <tr>
+                    <td>Jonas</td>
+                    <td>Rager</td>
+                    <td>Roger</td>
+                    <td>03.01.2007</td>
+                    <td>Tennis</td>
+                    <td>Fußball</td>
+                    <td>Radfahren</td>
+                    <!--SWP-->
+                </tr>
+                </tbody>
+            </table>
+        
+
+                <script>
+                    let form = document.querySelector("form")
+                    form.onsubmit = event =>
+                    {
+                        // alert("Formular wird abgesendet")
+                        event.preventDefault()
+                
+                        try
+                        {
+                            let getInput = name =>
+                            {
+                                let element = document.querySelector(`[name=${name}]`)
+                                if (!element)
+                                {
+                                    throw `Kein Eingabefeld mit dem Namen '${name}' gefunden.`
+                                }
+                                return element
+                            }
+                            let getInputs = name =>
+                            {
+                                let elements = Array.from(document.querySelectorAll(`[name=${name}]`))
+                                if (!elements.length)
+                                {
+                                    throw `Kein Eingabefeld mit dem Namen '${name}' gefunden.`
+                                }
+                                return elements
+                            }
+                            let getInputValue = name => getInput(name).value
+                            let getRadioButtonValue = name =>
+                            {
+                                let checkedElements = getInputs(name).filter(e => e.checked)
+                                if (!checkedElements.length)
+                                {
+                                    throw `Für Eingabefeld '${name}' muss es eine Auswahl geben (Standardauswahl mit Attribut 'checked' festlegen).`
+                                }
+                                return checkedElements[0].value
+                            }
+                            let getCheckboxValues = name => getInputs(name).filter(e => e.checked).map(e => e.value)
+                            let getComboboxValue = name =>
+                            {
+                                let element = getInput(name).querySelector("option:not(:first-of-type):checked")
+                                return element ? element.value : ""
+                            }
+                
+                            let firstName = getInputValue("firstName")
+                            let lastName = getInputValue("lastName")
+                            let birthday = getInputValue("birthday")
+                            let gender = getRadioButtonValue("gender")
+                            let hobbies = getCheckboxValues("hobbies")
+                            let favoriteSchoolSubject = getComboboxValue("favoriteSchoolSubject")
+                            let info = getInputValue("info")
+                            let favoriteColor = getInputValue("favoriteColor")
+                
+                            if (!firstName || !lastName)
+                            {
+                                alert("Vorname und Nachname bitte ausfüllen.")
+                                return
+                            }
+                
+                            console.log(`Adding friend: FirstName = ${firstName}, LastName = ${lastName}, Birthday = ${birthday}, Gender = ${gender}, Hobbies = ${hobbies.join(", ")}, Favorite school subject = ${favoriteSchoolSubject}, Info = ${info}, FavoriteColor = ${favoriteColor}`)
+                
+                            let tableBody = document.querySelector("table tbody")
+                            let row = document.createElement("tr")
+                            
+                            let addCell = text =>
+                            {
+                                let cell = document.createElement("td")
+                                cell.innerText = text
+                                return row.appendChild(cell)
+                            }
+                
+                            addCell(firstName)
+                            addCell(lastName)
+                            addCell(birthday || "N/A")
+                            addCell(gender)
+                            addCell(hobbies.join(", ") || "-")
+                            addCell(favoriteSchoolSubject || "-")
+                            addCell(info || "-")
+                            let favoriteColorCell = addCell("")
+                            favoriteColorCell.style.background = favoriteColor
+                
+                            tableBody.appendChild(row)
+                            
+                            form.reset()
+                        }
+                        catch (e)
+                        {
+                            alert(`FEHLER: ${e}`)
+                        }
+                    }
+                </script>
+            </body>
+</html>
