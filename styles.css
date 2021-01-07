@@ -1,0 +1,15 @@
+h1 { /* Alle h1-Elemente stylen */
+    /* Unterer Rand 1px breit, strichliert und schwarz zeichnen */
+    border-bottom: 1px dashed black;
+    /*Kleinbuchstaben als kleine Großbuchstaben darstellen */
+    font-variant: small-caps;
+    color: steelblue;
+}
+
+table {
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px solid gray;
+    padding: 10px;/* Abstand in jede Seite*/
+}
